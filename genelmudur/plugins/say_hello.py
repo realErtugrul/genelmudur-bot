@@ -4,18 +4,17 @@ from functools import partial
 from genelmudur.BotConfig import genelmudur
 from genelmudur.utils import buttonator
 import asyncio, time
+from genelmudur.utils.prefix import cmdprefix
 
-command = partial(filters.command, prefixes=["!", "/", "."])
 
-
-@genelmudur.on_message(command("start"))
+@genelmudur.on_message(cmdprefix("start"))
 async def say_hello(client: Client, message: Message) -> None:
     msg = await message.reply_text(text="`Hello..`", quote=True)
     await asyncio.sleep(1)
     await msg.edit_text(text="`Hello I'm Ready to Use`")
 
 
-@genelmudur.on_message(command("ping"))
+@genelmudur.on_message(cmdprefix("ping"))
 async def ping(_, message: Message):
     start = time.time()
     reply = await message.reply_text("...")
@@ -33,7 +32,7 @@ my_buttons = {
 button_filter = filters.create(lambda _, __, query: query.data in my_buttons.keys())
 
 
-@genelmudur.on_message(command("buttons"))
+@genelmudur.on_message(cmdprefix("buttons"))
 async def buttons(client: Client, message: Message):
     me = await client.get_me()
 
