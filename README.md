@@ -1,1 +1,6 @@
 # genelmudur-bot
+-
+
+# TODO
+-
+-
