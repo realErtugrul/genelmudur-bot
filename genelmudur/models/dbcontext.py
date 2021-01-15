@@ -1,5 +1,8 @@
 from genelmudur.models.chats import Chats
 from genelmudur.models.users import Users
+from genelmudur.models.federations import Federations
+from genelmudur.models.membership import Memberships
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -15,6 +18,8 @@ Base: declarative_base = declarative_base()
 
 Chats.__table__.create(bind=DbEngine, checkfirst=True)
 Users.__table__.create(bind=DbEngine, checkfirst=True)
+Federations.__table__.create(bind=DbEngine, checkfirst=True)
+Memberships.__table__.create(bind=DbEngine, checkfirst=True)
 
 Session: sessionmaker = sessionmaker(DbEngine)
 session = Session()
