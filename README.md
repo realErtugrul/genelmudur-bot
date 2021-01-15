@@ -20,3 +20,4 @@ This is an open source project, however some special plugins or functionalities 
 
 # Contributors
 - @realErtugrul
+- @astrapel
