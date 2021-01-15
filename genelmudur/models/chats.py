@@ -9,7 +9,7 @@ class Chats(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     chat_id = Column(BigInteger)
     chat_name = Column(String(100), nullable=True)
-    federation = Column(BigInteger, ForeignKey("Federations.id"))
+    federation = Column(Integer, nullable=True)
 
     def __init__(self, chat_id: int, chat_name: str):
         self.chat_id = chat_id
