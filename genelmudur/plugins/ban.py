@@ -21,6 +21,10 @@ async def ban(_, message: Message):
         print(e)
         users = []
 
+    if len(users) < 1:
+        await message.reply('Please specify user(s) to ban by reply, username or user id')
+        return
+
     chat = message.chat
     banned = []
     for user in users:
@@ -34,4 +38,4 @@ async def ban(_, message: Message):
     if len(banned) > 0:
         await message.reply(f'{", ".join([user.mention() for user in banned])} banned!')
     else:
-        await message.reply('Nobody banned, sorry')
+        await message.reply('Ban failed')
