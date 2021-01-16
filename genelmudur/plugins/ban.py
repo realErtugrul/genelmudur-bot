@@ -20,7 +20,6 @@ async def ban(_, message: Message):
     except BaseException as e:
         print(e)
         users = []
-        return
 
     chat = message.chat
     banned = []
