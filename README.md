@@ -4,20 +4,22 @@ This project was started to help us manage our Telegram community [@programlama]
 This is an open source project, however some special plugins or functionalities will be closed source and will not be added to this repository. 
 
 # Current Features
-- 
--
+- Extract users from messages
+- Ban users
+- Database models
 
 # Planned Features
 - Basic group management functions (e.g. ban, warn, timeout, mute) 
 - Federations and fedbans, fedwarns...
 - Mute users by vote (when admins are not available) 
 - Connection to the spamwat.ch-API
-- Logging
+- Logging 
 
 # Known Bugs
 -
 -
 
 # Contributors
-- @realErtugrul
-- @astrapel
+- [@realErtugrul](http://github.com/realErtugrul)
+- [@astrapel](http://github.com/astrapel)
+- [@frknkrc44](http://github.com/frknkrc44)
