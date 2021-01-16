@@ -26,10 +26,10 @@ async def extract_users(msg: Message) -> List[User]:
     if msg.text:
         ids = [int(i) for i in msg.text.split() if i.isdigit()]
         if len(ids):
-            try:
-                for id in ids:
+            for id in ids:
+                try:
                     total.append(await msg._client.get_users(user_ids=id))
-            except BaseException:
-                pass
+                except BaseException:
+                    pass
 
     return total
