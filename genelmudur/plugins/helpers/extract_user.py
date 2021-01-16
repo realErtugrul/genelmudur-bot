@@ -32,7 +32,4 @@ async def extract_users(msg: Message) -> List[User]:
             except BaseException:
                 pass
 
-    if len(total) < 1:
-        raise Exception('User extraction failed')
-
     return total
