@@ -16,3 +16,4 @@ class Memberships(Base):
         self.user_id = user_id
         self.chat_id = chat_id
         self.chat_name = chat_name
+        self.actions = actions

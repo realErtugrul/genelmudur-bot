@@ -14,3 +14,4 @@ class Chats(Base):
     def __init__(self, chat_id: int, chat_name: str):
         self.chat_id = chat_id
         self.chat_name = chat_name
+        self.federation = federation
