@@ -12,7 +12,7 @@ class Memberships(Base):
     chat_id = Column(BigInteger, ForeignKey("Chats.id"))
     actions = Column(JSON, nullable=True)
 
-    def __init__(self, user_id: int, chat_id: int, chat_name: str):
+    def __init__(self, user_id: int, chat_id: int, chat_name: str, actions: str):
         self.user_id = user_id
         self.chat_id = chat_id
         self.chat_name = chat_name
