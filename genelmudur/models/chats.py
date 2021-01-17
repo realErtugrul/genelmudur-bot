@@ -11,7 +11,7 @@ class Chats(Base):
     chat_name = Column(String(100), nullable=True)
     federation = Column(Integer, nullable=True)
 
-    def __init__(self, chat_id: int, chat_name: str):
+    def __init__(self, chat_id: int, chat_name: str, federation: int):
         self.chat_id = chat_id
         self.chat_name = chat_name
         self.federation = federation
