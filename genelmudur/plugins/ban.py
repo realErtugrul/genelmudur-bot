@@ -1,4 +1,4 @@
-from genelmudur.plugins.helpers.extract_user import extract_users
+from genelmudur.plugins.helpers.extract_users import extract_users
 from genelmudur.plugins.helpers.admin_check import is_admin, is_admin_user
 from pyrogram.types import Message
 from genelmudur.BotConfig import genelmudur
