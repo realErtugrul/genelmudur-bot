@@ -1,7 +1,7 @@
+from genelmudur.models.helpers.base import Base
 from sqlalchemy import Column, ForeignKey
 from sqlalchemy.sql.sqltypes import JSON
 from sqlalchemy.types import BigInteger, Integer
-from genelmudur.models.helpers.base import Base
 
 
 class Memberships(Base):

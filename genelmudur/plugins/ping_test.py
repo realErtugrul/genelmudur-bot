@@ -1,7 +1,8 @@
-from pyrogram.types import Message
-from genelmudur.BotConfig import genelmudur
 import time
+
+from genelmudur.BotConfig import genelmudur
 from genelmudur.utils.prefix import cmdprefix
+from pyrogram.types import Message
 
 
 @genelmudur.on_message(cmdprefix("ping"))

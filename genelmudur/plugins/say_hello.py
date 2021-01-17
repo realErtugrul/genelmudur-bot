@@ -1,10 +1,12 @@
-from pyrogram import Client, filters
-from pyrogram.types import Message, CallbackQuery
+import asyncio
+import time
 from functools import partial
+
 from genelmudur.BotConfig import genelmudur
 from genelmudur.utils import buttonator
-import asyncio, time
 from genelmudur.utils.prefix import cmdprefix
+from pyrogram import Client, filters
+from pyrogram.types import CallbackQuery, Message
 
 
 @genelmudur.on_message(cmdprefix("start"))

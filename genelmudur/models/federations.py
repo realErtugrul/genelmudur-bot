@@ -1,6 +1,6 @@
-from sqlalchemy import Column
-from sqlalchemy.types import BigInteger, Integer, String, JSON
 from genelmudur.models.helpers.base import Base
+from sqlalchemy import Column
+from sqlalchemy.types import JSON, BigInteger, Integer, String
 
 
 class Federations(Base):

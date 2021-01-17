@@ -1,12 +1,12 @@
+from configparser import ConfigParser, SectionProxy
+
 from genelmudur.models.chats import Chats
-from genelmudur.models.users import Users
 from genelmudur.models.federations import Federations
 from genelmudur.models.membership import Memberships
-
+from genelmudur.models.users import Users
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from configparser import ConfigParser, SectionProxy
 
 sqlconfig: ConfigParser = ConfigParser()
 sqlconfig.read("sql.ini")

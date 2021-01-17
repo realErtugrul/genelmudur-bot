@@ -1,6 +1,6 @@
+from pyrogram import Client
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.types import Message
-from pyrogram import Client
 
 
 async def is_admin(msg: Message) -> bool:

@@ -1,6 +1,6 @@
-from sqlalchemy import Column, ForeignKey
-from sqlalchemy.types import BigInteger, String, Integer
 from genelmudur.models.helpers.base import Base
+from sqlalchemy import Column, ForeignKey
+from sqlalchemy.types import BigInteger, Integer, String
 
 
 class Users(Base):
