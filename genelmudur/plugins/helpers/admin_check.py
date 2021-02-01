@@ -3,16 +3,16 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.types import Message
 
 
-async def is_admin(msg: Message) -> bool:
-    if not msg.from_user:
+async def is_admin(message: Message) -> bool:
+    if not message.from_user:
         return False
 
-    if msg.chat.type not in ["group", "supergroup", "channel"]:
+    if message.chat.type not in ["group", "supergroup", "channel"]:
         return False
 
-    cl: Client = msg._client
-    cid: int = msg.chat.id
-    uid: int = msg.from_user.id
+    cl: Client = message._client
+    cid: int = message.chat.id
+    uid: int = message.from_user.id
 
     return await is_admin_user(cl, cid, uid)
 
