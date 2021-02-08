@@ -1,6 +1,6 @@
 """
 genelmudur-bot - Another Telegram group management bot.
-Copyright (C) 20202021 realErtugrul <https://github.com/realErtugrul>
+Copyright (C) 2020-2021 realErtugrul <https://github.com/realErtugrul>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
