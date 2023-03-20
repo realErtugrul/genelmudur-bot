@@ -39,7 +39,7 @@ async def new_member(client: Client, message: Message) -> None:
     new_members = ", ".join(new_members_list)
 
     # Welcome message, hard coded atm, has to be outsourced to database
-    text = f"Merhaba {new_members}, {group_name} Grubuna hoş geldin!"
+    text = f"မင်္ဂလာပါ {new_members}, {group_name} မှကြိုဆိုပါတယ်"
 
     # Send the welcome message, without the web page preview
     await message.reply_text(text, disable_web_page_preview=True)
